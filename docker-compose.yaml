@@ -7,7 +7,5 @@ services:
   test:
     image: tutum/curl
     command: bash /app/test_docker.sh
-    volumes:
-      - ".:/app"
     depends_on:
       - web
