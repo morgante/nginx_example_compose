@@ -5,7 +5,8 @@ services:
     ports:
       - "8333:80"
   test:
-    image: tutum/curl
+    build:
+      context: ./infra/test
     command: bash /app/test_docker.sh
     depends_on:
       - web
