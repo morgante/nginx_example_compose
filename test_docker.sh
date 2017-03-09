@@ -3,7 +3,7 @@
 tries=1
 ret=1
 
-curl -f localhost:8333 > /dev/null 2>&1
+curl -f web:80 > /dev/null 2>&1
 ret=$?
 
 if [ $ret -eq 0 ]; then

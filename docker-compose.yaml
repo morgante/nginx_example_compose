@@ -4,3 +4,10 @@ services:
     build: .
     ports:
       - "8333:80"
+  test:
+    image: tutum/curl
+    command: bash /app/test_docker.sh
+    volumes:
+      - ".:/app"
+    depends_on:
+      - web
