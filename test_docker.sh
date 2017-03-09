@@ -1,6 +1,6 @@
 #/bin/bash
 
-tries=15
+tries=1
 ret=1
 while [ $ret -ne 0 ] && [ $tries -ne 0 ]
 do
